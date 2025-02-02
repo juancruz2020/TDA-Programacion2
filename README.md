@@ -3,10 +3,10 @@ En este repositorio se encontraran todos los datos abstractos vistos en la mater
 
 TDA:
 
-1- Pila\n
-2- Cola
-3- cola con prioridad
-4- Diccionario
-5- Conjunto
-6- Arbol binario de busqueda
-7- Grafo
+1- Pila  
+2- Cola  
+3- cola con prioridad  
+4- Diccionario  
+5- Conjunto  
+6- Arbol binario de busqueda  
+7- Grafo  
