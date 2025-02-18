@@ -1,6 +1,6 @@
 import java.util.Random;
 
-public class implementacion implements interfaz {
+public class implementacionCONJ implements interfazCONJ {
 
     int conjunto[];
     int cant;
