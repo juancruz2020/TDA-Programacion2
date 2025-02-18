@@ -1,6 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        esta_invertida();
+        repetidos();
     }
 
 
@@ -213,4 +213,136 @@ public class Main {
             System.out.println("diferentes");
         }
     }
+
+    //tp 2
+
+    //2.1
+
+    //costo
+
+    public static void diferesntes(){
+        implementacion a = new implementacion();
+        implementacion b = new implementacion();
+        implementacion c = new implementacion();
+
+        c.crear();
+        b.crear();
+        a.crear();
+        a.acolar(1);
+        a.acolar(3);
+        a.acolar(2);
+        a.acolar(3);
+
+        boolean flag = true;
+
+        while (flag) {
+            int inicio = a.primero();
+            c.acolar(a.primero());
+            a.desacolar();
+            while (!a.vacio()){
+                if (inicio == a.primero()){
+                    a.desacolar();
+                }
+                else{
+                    b.acolar(a.primero());
+                    a.desacolar();
+                }
+            }
+            flag = false;
+            while (!b.vacio()){
+                a.acolar(b.primero());
+                b.desacolar();
+                flag = true;
+            }
+        }
+        c.imprimir();
+    }
+
+    //2.2
+
+    //costo
+
+    public static void mitades(){
+        implementacion a = new implementacion();
+        implementacion b = new implementacion();
+        implementacion c = new implementacion();
+
+        c.crear();
+        b.crear();
+        a.crear();
+
+        a.acolar(1);
+        a.acolar(3);
+        a.acolar(2);
+        a.acolar(3);
+
+        int largo = 0;
+
+        while (!a.vacio()){
+            b.acolar(a.primero());
+            a.desacolar();
+            largo ++;
+        }
+
+        int mitad = largo/2;
+
+        while (largo != mitad){
+            a.acolar(b.primero());
+            b.desacolar();
+            c.acolar(b.primero());
+            b.desacolar();
+            largo--;
+        }
+
+        a.imprimir();
+        System.out.println(" ");
+        c.imprimir();
+    }
+
+    //2.3
+
+    //costo
+
+    public static void repetidos(){
+        implementacion a = new implementacion();
+        implementacion b = new implementacion();
+        implementacion c = new implementacion();
+        implementacion d = new implementacion();
+
+        d.crear();
+        c.crear();
+        b.crear();
+        a.crear();
+        a.acolar(1);
+        a.acolar(3);
+        a.acolar(2);
+        a.acolar(3);
+
+        boolean flag = true;
+
+        while (flag) {
+            int inicio = a.primero();
+            c.acolar(a.primero());
+            a.desacolar();
+            while (!a.vacio()){
+                if (inicio == a.primero()){
+                    d.acolar(a.primero());
+                    a.desacolar();
+
+                }
+                else{
+                    b.acolar(a.primero());
+                    a.desacolar();
+                }
+            }
+            flag = false;
+            while (!b.vacio()){
+                a.acolar(b.primero());
+                b.desacolar();
+                flag = true;
+            }
+        }
+        d.imprimir();
+    }
+
 }
