@@ -218,7 +218,7 @@ public class Main {
 
     //2.1
 
-    //costo
+    //costo: o (n2)
 
     public static void diferesntes(){
         implementacion a = new implementacion();
@@ -260,7 +260,7 @@ public class Main {
 
     //2.2
 
-    //costo
+    //costo: o(n)
 
     public static void mitades(){
         implementacion a = new implementacion();
@@ -301,7 +301,7 @@ public class Main {
 
     //2.3
 
-    //costo
+    //costo: o (n2)
 
     public static void repetidos(){
         implementacion a = new implementacion();

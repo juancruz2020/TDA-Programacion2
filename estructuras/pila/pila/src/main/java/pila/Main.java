@@ -180,7 +180,7 @@ public class Main {
     //tp 2
     //1.1
 
-    //costo:
+    //costo: o(n2)
 
     public static void capicua() {
         implementacion a = new implementacion();
@@ -224,7 +224,7 @@ public class Main {
 
     //1.2
 
-    //costo
+    //costo: o (n3)
 
     public static void repetidas() {
         implementacion a = new implementacion();
@@ -279,7 +279,7 @@ public class Main {
 
     //1.3
 
-    //costo
+    //costo: o (n)
 
     public static void repartir() {
         implementacion a = new implementacion();
@@ -318,7 +318,7 @@ public class Main {
 
     //1.4
 
-    //costo
+    //costo: o (n2)
 
     public static void repetidos()
 
