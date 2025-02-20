@@ -1,4 +1,4 @@
-public class implementacion implements interfaz {
+public class implementacionCONJ implements interfazCONJ {
 
     class nodo{
         int info;

@@ -1,4 +1,4 @@
-public interface interfaz {
+public interface interfazCONJ {
     public void crear();
     public void agregar(int numero);
     public int elegir();
